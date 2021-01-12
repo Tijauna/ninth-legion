@@ -13,6 +13,7 @@ public class spaceship_script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Basic inputs
+        GetComponent<Rigidbody2D>().velocity = new Vector2(Input.GetAxis("Horizontal") * 10, Input.GetAxis("Vertical") * 10);
     }
 }
